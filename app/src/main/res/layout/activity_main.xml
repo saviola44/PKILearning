@@ -8,21 +8,34 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="No file chosen"
+        android:id="@+id/chosenFilePathTV"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/selectCertBtn"
+        android:text="Select certificate"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="80dp"
-        android:layout_margin="10dp"
-        android:id="@+id/enableAdmin"
-        android:text="enable device admin"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="40dp"
+        android:id="@+id/installCertBtn"
+        android:text="Install PKI certificate"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/selectCertBtn"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/changepass"
-        android:text="zmiana hasla"
+        android:id="@+id/signTextbtn"
+        android:text="Sign message"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/enableAdmin"/>
+        android:layout_above="@id/installCertBtn"/>
 
 </RelativeLayout>
